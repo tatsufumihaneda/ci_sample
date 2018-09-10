@@ -13,7 +13,7 @@ jobs:
       - run:
           name: Build docker image
           command: |
-            docker build -t ci_sample .
+            docker build -t ci_sample ./web
       - deploy:
           name: Push docker image to DockerHub
           command: |
